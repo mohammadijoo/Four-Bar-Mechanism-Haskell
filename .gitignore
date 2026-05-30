@@ -1,0 +1,14 @@
+dist-newstyle/
+dist/
+.cabal-sandbox/
+cabal.sandbox.config
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
+*.prof
+*.aux
+*.hp
+*.eventlog
+.DS_Store
+Thumbs.db

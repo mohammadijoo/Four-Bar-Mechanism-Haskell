@@ -1,0 +1,20 @@
+cabal-version:      3.0
+name:               fourbar-linkage-threepenny
+version:            1.0.0.0
+synopsis:           Responsive Threepenny GUI simulator for a planar four-bar linkage
+license:            MIT
+license-file:       LICENSE
+author:             Abolfazl Mohammadijoo
+maintainer:         a.mohamadijoo@gmail.com
+build-type:         Simple
+
+executable fourbar-linkage-threepenny
+  main-is:          Main.hs
+  hs-source-dirs:   app, src
+  other-modules:    FourBar
+  default-language: Haskell2010
+  ghc-options:      -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >= 4.14 && < 5
+    , threepenny-gui >= 0.9 && < 0.10
+    , time >= 1.9 && < 1.15
